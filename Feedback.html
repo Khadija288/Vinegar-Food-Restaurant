@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar Food</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <h3>Vinegar<br>Food</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mealsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meals
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="mealsDropdown">
+                            <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                            <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                            <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Catring.html">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recipe-of-the-month.html">Recipe of Month</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="feedback">
+        <div class="form-header">
+            <h1><center>Share Your Feedback</center></h1>
+            <p class="text-navy"><center>We value your input to improve our service</center></p>
+        </div>
+<div class="feedbackcard">
+        <div class="form-progress">
+            <div class="progress-bar"></div>
+        </div>
+        <form id="feedbackForm">
+            <!-- Step 1 -->
+            <div class="form-step active" data-step="1">
+                <div class="form-group">
+                    <label for="feedbackType">What type of feedback do you have?</label>
+                    <select id="feedbackType" class="form-control" required>
+                        <option value="">Please select...</option>
+                        <option value="query">Question</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                    <div class="error-message">Please select a feedback type</div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-outline-light mt-3 px-5 py-3 rounded-pill" onclick="nextStep(2)">Continue</button>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="form-step" data-step="2">
+                <div class="form-group">
+                    <label for="message">Please describe your feedback</label>
+                    <textarea id="message" placeholder="Be as specific as possible..." required></textarea>
+                    <div class="error-message">Please enter your feedback message</div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-outline-light mt-3 px-5 py-3 rounded-pill" onclick="prevStep()">Back</button>
+                    <button type="button" class="btn btn-outline-light mt-3 px-5 py-3 rounded-pill" onclick="nextStep(3)">Continue</button>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="form-step" data-step="3">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Optional">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Optional - if you'd like a response">
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-outline-light mt-3 px-5 py-3 rounded-pill" onclick="prevStep()">Back</button>
+                    <button type="submit" class="btn btn-outline-light mt-3 px-5 py-3 rounded-pill">Submit</button>
+                </div>
+            </div>
+            <!-- Success Message -->
+            <div class="success-message">
+                <div class="success-icon">✓</div>
+                <h2>Thank You!</h2>
+                <p>Your feedback has been successfully submitted.</p>
+            </div>
+        </form>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer-container">
+      
+          <div class="footer-about">
+            <h2>Vinegar Food</h2>
+            <p>Bringing you flavors from around the world with love, passion, and the finest ingredients.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>Karachi, Pakistan</li>
+              <li>+92 300 1234567</li>
+              <li>info@vinegarfood.com</li>
+            </ul>
+          </div>
+      
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Vinegar Food. All rights reserved.</p>
+        </div>
+      </footer>      
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentStep = 1;
+
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            progressBar.style.width = `${(currentStep-1)/2*100}%`;
+        }
+
+        function validateStep(step) {
+            let isValid = true;
+            const currentFormStep = document.querySelector(`[data-step="${step}"]`);
+
+            // Validate required fields
+            currentFormStep.querySelectorAll('input, select, textarea').forEach(input => {
+                if (input.required && !input.value.trim()) {
+                    isValid = false;
+                    input.parentElement.querySelector('.error-message').style.display = 'block';
+                    input.classList.add('error');
+                } else {
+                    input.parentElement.querySelector('.error-message').style.display = 'none';
+                    input.classList.remove('error');
+                }
+            });
+
+            return isValid;
+        }
+
+        function nextStep(step) {
+            if (!validateStep(currentStep)) return;
+            
+            document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+            currentStep = step;
+            document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+            updateProgress();
+        }
+
+        function prevStep() {
+            document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+            currentStep--;
+            document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+            updateProgress();
+        }
+
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate submission
+            document.querySelectorAll('.form-step').forEach(step => step.style.display = 'none');
+            document.querySelector('.success-message').classList.add('active');
+            this.reset();
+            currentStep = 1;
+            updateProgress();
+        });
+    </script>
+</body>
+</html>
