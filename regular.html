@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -38,7 +40,7 @@
                         <ul class="dropdown-menu" aria-labelledby="mealsDropdown">
                             <li><a class="dropdown-item" href="regular.html">Regular</a></li>
                             <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
-                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="snackes.html">Snacks</a></li>
                             <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
                             <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
                         </ul>
@@ -67,10 +69,10 @@
     </nav>
 <!-- Meal Sections -->
   <div id="regular" class="product-category">
-    <h2 class="text-center">Regular Meals</h2>
+    <h2 class="text-center" data-aos="fade-up">Regular Meals</h2>
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
           <img src="images/biryani.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Biryani</h4>
           <p>Description of the chocolate cake.</p>
@@ -78,7 +80,7 @@
         </div>
       </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
           <img src="images/achar gosht.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Achar Gosht</h4>
           <p>Description of the chocolate cake.</p>
@@ -86,7 +88,7 @@
         </div>
       </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
           <img src="images/paratha.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Paratha</h4>
           <p>Description of the chocolate cake.</p>
@@ -94,7 +96,7 @@
         </div>
       </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
           <img src="images/chicken manchorian .jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Chicken Manchorian</h4>
           <p>Description of the chocolate cake.</p>
@@ -102,7 +104,7 @@
         </div>
       </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="500">
           <img src="images/Alu Matar.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Alu Matar</h4>
           <p>Description of the chocolate cake.</p>
@@ -110,7 +112,7 @@
         </div>
       </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="600">
           <img src="images/Chapati.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Chapati</h4>
           <p>Description of the chocolate cake.</p>
@@ -118,7 +120,7 @@
         </div>
       </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="700">
           <img src="images/Russian Salaad.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Russian Salaad</h4>
           <p>Description of the chocolate cake.</p>
@@ -126,7 +128,7 @@
         </div>
       </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="800">
           <img src="images/chilli mushroom.jpg" style="height: 250px;" class="img-fluid" alt="Product Image">
           <h4>Chilli Mushroom</h4>
           <p>Description of the chocolate cake.</p>
@@ -145,11 +147,10 @@
           <div class="footer-links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Feedback.html">Feedback</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -168,6 +169,16 @@
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Intersection Observer for fade-in animations -->
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+    </script>
     
 </body>
 </html>

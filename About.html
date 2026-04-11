@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
@@ -37,7 +39,7 @@
                         <ul class="dropdown-menu" aria-labelledby="mealsDropdown">
                             <li><a class="dropdown-item" href="regular.html">Regular</a></li>
                             <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
-                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="snackes.html">Snacks</a></li>
                             <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
                             <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
                         </ul>
@@ -70,19 +72,19 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h2 class="section-title display-4 fw-bold text-uppercase mt text-gold">About Us</h2>
-                    <p class="section-subtitle">Discover the story behind our passion for food.</p>
+                    <h2 class="section-title display-4 fw-bold text-uppercase mt text-gold" data-aos="fade-up">About Us</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Discover the story behind our passion for food.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-4">
-                    <img src="images/about.jpeg" alt="About" class="img-fluid rounded shadow-sm">
+                    <img src="images/about.jpeg" alt="About" class="img-fluid rounded shadow-sm" data-aos="fade-right">
                 </div>
                 <div class="col-lg-6 mt">
-                    <h3>Our Story</h3>
-                    <p class="text-navy">At Vinegar Food, we believe in the power of food to bring people together. Our journey began with a simple idea: to create delicious meals that not only satisfy your hunger but also nourish your soul. With a focus on quality ingredients and innovative recipes, we strive to provide an unforgettable dining experience.</p>
-                    <h3>Our Mission</h3>
-                    <p class="text-navy">Our mission is to create a culinary experience that delights the senses and fosters a sense of community. We are committed to using fresh, locally sourced ingredients and sustainable practices to ensure that every meal is not only delicious but also environmentally friendly.</p>
+                    <h3 data-aos="fade-left" data-aos-delay="100">Our Story</h3>
+                    <p class="text-navy" data-aos="fade-left" data-aos-delay="200">At Vinegar Food, we believe in the power of food to bring people together. Our journey began with a simple idea: to create delicious meals that not only satisfy your hunger but also nourish your soul. With a focus on quality ingredients and innovative recipes, we strive to provide an unforgettable dining experience.</p>
+                    <h3 data-aos="fade-left" data-aos-delay="300">Our Mission</h3>
+                    <p class="text-navy" data-aos="fade-left" data-aos-delay="400">Our mission is to create a culinary experience that delights the senses and fosters a sense of community. We are committed to using fresh, locally sourced ingredients and sustainable practices to ensure that every meal is not only delicious but also environmentally friendly.</p>
                 </div>
             </div>
         </div>
@@ -90,11 +92,11 @@
 <!-- facilities -->
 <section class="facilities-section">
     <div class="container">
-        <h2 class="section-title text-center mb-5 text-gold">Our Premium Facilities</h2>
+        <h2 class="section-title text-center mb-5 text-gold" data-aos="fade-up">Our Premium Facilities</h2>
         <div class="row">
             <!-- Facility 1 -->
             <div class="col-md-3 col-sm-6">
-                <div class="facility-card text-center">
+                <div class="facility-card text-center" data-aos="zoom-in" data-aos-delay="100">
                     <i class="fas fa-wine-glass-alt facility-icon"></i>
                     <h3 class="facility-title">Premium Bar</h3>
                     <p class="facility-description">Experience our curated selection of fine wines and craft cocktails in our elegant bar area.</p>
@@ -102,7 +104,7 @@
             </div>
             <!-- Facility 2 -->
             <div class="col-md-3 col-sm-6">
-                <div class="facility-card text-center">
+                <div class="facility-card text-center" data-aos="zoom-in" data-aos-delay="200">
                     <i class="fas fa-utensils facility-icon"></i>
                     <h3 class="facility-title">Gourmet Kitchen</h3>
                     <p class="facility-description">Open kitchen concept showcasing our chefs creating.</p>
@@ -110,7 +112,7 @@
             </div>
             <!-- Facility 3 -->
             <div class="col-md-3 col-sm-6">
-                <div class="facility-card text-center">
+                <div class="facility-card text-center" data-aos="zoom-in" data-aos-delay="300">
                     <i class="fas fa-fire facility-icon"></i>
                     <h3 class="facility-title">Wood-Fired Grill</h3>
                     <p class="facility-description">Savor authentic flavors from our traditional wood-fired grill and oven.</p>
@@ -118,7 +120,7 @@
             </div>
             <!-- Facility 4 -->
             <div class="col-md-3 col-sm-6">
-                <div class="facility-card text-center">
+                <div class="facility-card text-center" data-aos="zoom-in" data-aos-delay="400">
                     <i class="fas fa-calendar-alt facility-icon"></i>
                     <h3 class="facility-title">Event Space</h3>
                     <p class="facility-description">Exclusive private dining area for special events and corporate gatherings.</p>
@@ -130,42 +132,45 @@
     <!-- Team Section -->
 <section class="py-5">
     <div class="container text-center bg-white"  style="padding: 30px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);">
-      <h2 class="mb-5">Meet Our Team</h2>
+      <h2 class="mb-5" data-aos="fade-up">Meet Our Team</h2>
       <div class="row">
         <!-- Tahoora Fatima Raad -->
         <div class="col-md-4">
           <img src="images/head chief.webp"
                class="rounded-circle img-fluid mb-3 shadow"
                style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #D4AF37 "
-               alt=" Julia Child.">
-          <h5>Julia Child</h5>
-          <p class="text-navy">Head Chef</p>
+               alt=" Julia Child."
+               data-aos="fade-up" data-aos-delay="100">
+          <h5 data-aos="fade-up" data-aos-delay="200">Julia Child</h5>
+          <p class="text-navy" data-aos="fade-up" data-aos-delay="300">Head Chef</p>
         </div>
         <!-- Tuba Geçkil -->
         <div class="col-md-4">
           <img src="images/john deo.jpg"
                class="rounded-circle img-fluid mb-3 shadow"
                style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #D4AF37"
-               alt="john deo">
-          <h5 >John Deo</h5>
-          <p class="text-navy">Hyper-Realistic Cake Artist</p>
+               alt="john deo"
+               data-aos="fade-up" data-aos-delay="200">
+          <h5 data-aos="fade-up" data-aos-delay="300">John Deo</h5>
+          <p class="text-navy" data-aos="fade-up" data-aos-delay="400">Hyper-Realistic Cake Artist</p>
         </div>
         <!-- Amaury Guichon -->
         <div class="col-md-4">
           <img src="images/Jane Smith.jpg"
                class="rounded-circle img-fluid mb-3 shadow"
                style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #D4AF37"
-               alt="Jane Smith">
-          <h5>Jane Smith</h5>
-          <p class="text-navy">Master Cake Chef</p>
+               alt="Jane Smith"
+               data-aos="fade-up" data-aos-delay="300">
+          <h5 data-aos="fade-up" data-aos-delay="400">Jane Smith</h5>
+          <p class="text-navy" data-aos="fade-up" data-aos-delay="500">Master Cake Chef</p>
        </div>
       </div>
     </div>
   </section>           
    <div class="commitment text-center">
         <div class="col-lg-12 ">
-            <h3>Our Commitment</h3>
-                <blockquote>At Vinegar Food, we are dedicated to providing our guests with the highest quality dining experience. From our carefully curated menu to our warm and inviting atmosphere, we strive to make every visit memorable. Whether you're celebrating a special occasion or simply enjoying a meal with friends,our team of talented chefs and dedicated staff work tirelessly to bring you the best in culinary excellence. We invite you to join us on this journey and experience the magic of Vinegar Food.</blockquote>
+            <h3 data-aos="fade-up">Our Commitment</h3>
+                <blockquote data-aos="fade-up" data-aos-delay="200">At Vinegar Food, we are dedicated to providing our guests with the highest quality dining experience. From our carefully curated menu to our warm and inviting atmosphere, we strive to make every visit memorable. Whether you're celebrating a special occasion or simply enjoying a meal with friends,our team of talented chefs and dedicated staff work tirelessly to bring you the best in culinary excellence. We invite you to join us on this journey and experience the magic of Vinegar Food.</blockquote>
         </div>
      </div>
      <footer class="footer">
@@ -177,11 +182,10 @@
           <div class="footer-links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Feedback.html">Feedback</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -199,5 +203,15 @@
       </footer>      
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+    </script>
 </body>
 </html>

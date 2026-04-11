@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
@@ -38,7 +40,7 @@
                         <ul class="dropdown-menu" aria-labelledby="mealsDropdown">
                             <li><a class="dropdown-item" href="regular.html">Regular</a></li>
                             <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
-                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="snackes.html">Snacks</a></li>
                             <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
                             <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
                         </ul>
@@ -70,13 +72,13 @@
 <section class="contact-section py-5">
   <div class="container">
       <div class="text-center mb-5">
-          <h2 class="display-4 fw-bold text-uppercase mt">Get in Touch</h2>
-          <p class="lead text-navy text-bold">We'd love to hear from you! Reach out for reservations, catering, or feedback.</p>
+          <h2 class="display-4 fw-bold text-uppercase mt" data-aos="fade-up">Get in Touch</h2>
+          <p class="lead text-navy text-bold" data-aos="fade-up" data-aos-delay="200">We'd love to hear from you! Reach out for reservations, catering, or feedback.</p>
       </div>
       <div class="row g-5">
           <!-- Contact Form -->
           <div class="col-lg-7">
-              <div class="card border-0 shadow-lg">
+              <div class="card border-0 shadow-lg" data-aos="fade-right" data-aos-delay="300">
                   <div class="card-body p-5">
                      <form>
     <div class="row g-4">
@@ -112,7 +114,7 @@
           <!-- Contact Info -->
           <div class="col-lg-5">
               <div class="contact-info mt">
-                  <div class="d-flex align-items-start mb-4">
+                  <div class="d-flex align-items-start mb-4" data-aos="fade-left" data-aos-delay="400">
                       <div class="icon-square bg-dark-navy rounded-circle p-3 me-4">
                           <i class="fas fa-map-marker-alt fa-2x text-gold"></i>
                       </div>
@@ -123,7 +125,7 @@
                       </div>
                   </div>
 
-                  <div class="d-flex align-items-start mb-4">
+                  <div class="d-flex align-items-start mb-4" data-aos="fade-left" data-aos-delay="500">
                       <div class="icon-square bg-dark-navy rounded-circle p-3 me-4">
                           <i class="fas fa-phone fa-2x text-gold"></i>
                       </div>
@@ -133,7 +135,7 @@
                           <p class="text-navy">Mon-Fri: 9am - 8pm EST</p>
                       </div>
                   </div>
-                  <div class="d-flex align-items-start">
+                  <div class="d-flex align-items-start" data-aos="fade-left" data-aos-delay="600">
                       <div class="icon-square bg-dark-navy rounded-circle p-3 me-4">
                           <i class="fas fa-envelope fa-2x text-gold"></i>
                       </div>
@@ -150,7 +152,7 @@
 </section>
 <!-- Map Section -->
 <section>
-    <div id="map"></div>
+    <div id="map" data-aos="fade-up"></div>
 </section>
 <!-- footer  -->
 <footer class="footer">
@@ -162,11 +164,10 @@
       <div class="footer-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -208,6 +209,16 @@
   function error() {
     alert("Can't get Your Location");
   }
+</script>
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+    });
 </script>
 
 </body>
